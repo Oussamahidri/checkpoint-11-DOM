@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2964/2964514.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <title>Fitness Hub</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">FITNESS HUB</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://images.unsplash.com/photo-1595348020949-87cdfbb44174?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            class="d-block w-100" alt="first corsel.">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1584116831289-e53912463c35?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            class="d-block w-100" alt="secend corsel">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1629214831802-bb2a07f9517e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            class="d-block w-100" alt="third corsel">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="cardmenu">
+      <div class="card1" style="width: 300px;">
+        <img
+          src="https://protein-shop-tunisia.tn/wp-content/uploads/2020/02/gold-standard-100-whey-protein-optimum-nutrition.png"
+          class="card-img-top" alt="wheyprotien">
+        <div class="card-body">
+          <h5 class="card-title1">WHEY GOLD STANDARD</h5>
+          <p class="price">Price: $69.99</p>
+          <button id="increment">+</button>
+          <p class="prix">0</p>
+          <button id="decrement">-</button>
+          <a href="#" class="btn btn-primary">Buy</a>
+        </div>
+      </div>
+      <div class="card2" style="width: 300px;">
+        <img
+          src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51O7xY2wApL._SX300_SY300_QL70_ML2_.jpg"
+          class="card-img-top" alt="musclepharm">
+        <div class="card-body">
+          <h5 class="card-title1">MusclePharm Casein Protein</h5>
+          <p>Price: $29.99</p>
+          <button id="increment">+</button>
+          <p class="prix">0</p>
+          <button id="decrement">-</button>
+          <a href="#" class="btn btn-primary">Buy</a>
+        </div>
+      </div>
+      <div class="card3" style="width: 450px;">
+        <img
+          src="https://media.gq-magazine.co.uk/photos/639877daae86bf6162acc711/master/w_1920,h_1280,c_limit/Best_Protein_Powders_BSN_Syntha-6.jpg"
+          class="card-img-top" alt="Protein">
+        <div class="card-body">
+          <h5 class="card-title1">SYNTHA PROTIEN </h5>
+          <p>Price: $59.99</p>
+          <button id="increment">+</button>
+          <p class="prix">0</p>
+          <button id="decrement">-</button>
+          <a href="#" class="btn-primary">Buy</a>
+        </div>
+      </div>
+    </div>
+    <div class="cart">
+      <h2>Panier d'achat</h2>
+      <ul class="cart-items"></ul>
+      <p class="cart-total">Total : $0</p>
+      <button class="checkout-button">Checkout</button>
+    </div>
+
+
+
+
+
+
+    <script src="./index.js"></script>
+  </main>
+  <footer>
+
+  </footer>
+
+</body>
+
+</html>
